@@ -1,0 +1,27 @@
+{
+    "minify": true,
+    "jsc": {
+        "parser": {
+            "syntax": "typescript",
+            "decorators": true,
+            "dynamicImport": true
+        },
+        "transform": {
+            "legacyDecorator": true,
+            "decoratorMetadata": true
+        },
+        "target": "es2016",
+        "keepClassNames": true,
+        "loose": true,
+        "minify": {}
+    },
+    "sourceMaps": false,
+    "module": {
+        "type": "commonjs",
+        // These are defaults.
+        "strict": false,
+        "strictMode": true,
+        "lazy": false,
+        "noInterop": false
+    }
+}
