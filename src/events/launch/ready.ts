@@ -9,7 +9,7 @@ const event: BotEvent = {
         client.user?.setPresence({
             activities: [
                 {
-                    name: `to ${process.env.PREFIX}help`,
+                    name: `your meows <3`,
                     type: ActivityType.Listening
                 }
             ],
