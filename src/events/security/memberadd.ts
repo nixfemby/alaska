@@ -4,7 +4,6 @@ import { BotEvent } from "../../types";
 
 const event: BotEvent = {
     name: "guildMemberAdd",
-    once: true,
     execute : async (member: GuildMember, client: Client) => {
         // Check account age;
 
