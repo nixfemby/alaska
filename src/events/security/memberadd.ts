@@ -13,8 +13,9 @@ const event: BotEvent = {
                 member.send({ embeds: [new EmbedBuilder().setTitle(`You've been kicked from ${member.guild.name}`).setDescription("Reason: `account age below 14 days`").setColor("#ff9fbc").setTimestamp(Date.now())]})
             } catch(e) {
                 logger.error("Couldnt dm them :(")
-                member.kick("automod | account age below 14 days")
             }
+
+            member.kick("automod | account age below 14 days")
         }
 
         // No profile picture
@@ -24,8 +25,9 @@ const event: BotEvent = {
                 member.send({ embeds: [new EmbedBuilder().setTitle(`You've been kicked from ${member.guild.name}`).setDescription("Reason: `no profile picture set`").setColor("#ff9fbc").setTimestamp(Date.now())]})
             } catch(e) {
                 logger.error("Couldnt dm them :(")
-                member.kick("automod | no profile picture set")
             }
+            
+            member.kick("automod | no profile picture set")
         }
     }
 }
